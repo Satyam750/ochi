@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: Neu;
+    src: url(./assets/NeueMontreal-Regular.ttf);
+  }
+  
+@font-face {
+    font-family: Founder;
+    src: url(./assets/FoundersGrotesk-Semibold.ttf);
+  }
+  
+
+.neu{
+    font-family: Neu;
+
+}  
+.founder{
+    font-family: Founder;
+}
+
+
+.active{
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: 0.3s linear;
+    display: flex;
+    justify-content:stretch;
+    align-items: center;
+    z-index: 40;
+
+    /* padding: 0 7%; */
+  }
+  .hidden{
+    height: 4rem;
+    width: 100%;
+    z-index: 40;
+    position: fixed;
+    top: -80px;
+    transition: 0.3s linear;
+  
+  }
+
+  .ho{
+    transition: ease-in-out  0.3s;
+  }
